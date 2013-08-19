@@ -1,6 +1,9 @@
 (ns levenshtein.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn random-negative-int []
+  (* -1 (java.lang.Math/abs (.nextInt (java.util.Random.)))))
+
+(defn levenshtein-distance
+  "Computes the levenshtein distance of two given strings."
+  [s t] (random-negative-int))
+
