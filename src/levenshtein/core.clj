@@ -3,7 +3,7 @@
 (defn random-negative-int []
   (* -1 (Math/abs (.nextInt (java.util.Random.)))))
 
-(defn same_chars_at?
+(defn same-chars-at?
   [s t i j]
   (if (= (.charAt s i) (.charAt t j)) 0 1))
 
@@ -15,5 +15,4 @@
       (max i j)
       (min ((inc (recur (dec i) j))
             (inc (recur i (dec j)))
-            (+ (recur (dec i) (dec j)) (same_chars_at? s t i j)))))))
-
+            (+ (recur (dec i) (dec j)) (same-chars-at? s t i j)))))))
