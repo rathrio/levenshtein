@@ -11,3 +11,5 @@
     (is (>= 4 (levenshtein-distance "radi", "ub")))
     (is (<= 0 (levenshtein-distance "single", "fuetzgue"))
       "is positive definite")))
+
+(run-tests)
